@@ -1,13 +1,13 @@
 {
-	"name": "colinmollenhour/credis",
+	"name": "icyboy/credis",
 	"type": "library",
 	"description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
-	"homepage": "https://github.com/colinmollenhour/credis",
+	"homepage": "https://github.com/icyxp/credis",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Colin Mollenhour",
-			"email": "colin@mollenhour.com"
+			"name": "icyboy",
+			"email": "icyboy@me.com"
 		}
 	],
 	"require": {

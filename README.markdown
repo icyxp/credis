@@ -1,4 +1,7 @@
-[![Build Status](https://travis-ci.org/colinmollenhour/credis.svg?branch=master)](https://travis-ci.org/colinmollenhour/credis)
+[![Build Status](https://travis-ci.org/icyboy/credis.svg?branch=master)](https://travis-ci.org/icyboy/credis)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.6-8892BF.svg)](https://php.net/)
+[![Total Downloads](https://poser.pugx.org/icyboy/credis/downloads)](https://packagist.org/packages/icyboy/credis)
+[![License](https://img.shields.io/packagist/l/jcchavezs/credis.svg)](https://github.com/icyxp/credis/blob/master/LICENSE)
 
 # Credis
 
@@ -169,5 +172,4 @@ echo $cluster->get('key').PHP_EOL;
 
 ## About
 
-&copy; 2011 [Colin Mollenhour](http://colin.mollenhour.com)
-&copy; 2009 [Justin Poliey](http://justinpoliey.com)
+&copy; 2017 [Icyboy](http://icyxp.github.io)

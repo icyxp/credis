@@ -235,6 +235,11 @@ class Credis_Client {
     /**
      * @var int
      */
+    protected $connectSleepTime = 0;
+
+    /**
+     * @var int
+     */
     protected $connectFailures = 0;
 
     /**
@@ -390,6 +395,12 @@ class Credis_Client {
         return $this;
     }
 
+    public function setReconnectSleepTime($time)
+    {
+        $this->connectSleepTime = $time;
+        return $this;
+    }
+
     /**
      * @param bool $flag
      * @return Credis_Client
@@ -468,6 +479,7 @@ class Credis_Client {
         if ( ! $result) {
             $this->connectFailures++;
             if ($this->connectFailures <= $this->maxConnectRetries) {
+                sleep($this->connectSleepTime);
                 return $this->connect();
             }
             $failures = $this->connectFailures;
@@ -498,6 +510,18 @@ class Credis_Client {
     {
         return $this->connected;
     }
+
+    /**
+     * @throws \CredisException
+     */
+    public function pingCheck() {
+        try {
+            $this->redis->ping();
+        } catch (Exception $e) {
+            throw new CredisException($e->getMessage());
+        }
+    }
+
     /**
      * Set the read timeout for the connection. Use 0 to disable timeouts entirely (or use a very long timeout
      * if not supported).
