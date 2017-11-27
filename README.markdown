@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/icyboy/credis.svg?branch=master)](https://travis-ci.org/icyboy/credis)
+[![Build Status](https://travis-ci.org/icyxp/credis.svg?branch=master)](https://travis-ci.org/icyxp/credis)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.5-8892BF.svg)](https://php.net/)
 [![Total Downloads](https://poser.pugx.org/icyboy/credis/downloads)](https://packagist.org/packages/icyboy/credis)
 [![License](https://img.shields.io/packagist/l/jcchavezs/credis.svg)](https://github.com/icyxp/credis/blob/master/LICENSE)
